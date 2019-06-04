@@ -37,10 +37,10 @@ app.post("/", function(req, res) { // POST
   var jsonData = JSON.stringify(data); // Turning a real life JS object(data) to JSON flatpack
 
   var options = { // Creating object for the Request API
-    url: "https://us20.api.mailchimp.com/3.0/lists/10dd517f57",
+    url: "https://us20.api.mailchimp.com/3.0/lists/  // Here is the List ID",
     method: "POST",
     headers: { // Authentication
-      "Authorization": "ilknur1 163f41715735c982577b358cc415fc26-us20"
+      "Authorization": "ilknur1 // Here is the API KEY"
     },
   body: jsonData  // The body
   };
@@ -64,7 +64,4 @@ app.post("/failure", function(req, res){   // Post method to redirect to the hom
 app.listen(port, function() {
   console.log("Server is running on port" + port);
 });
-//API KEY
-//163f41715735c982577b358cc415fc26-us20
-//list ID
-//10dd517f57
+
